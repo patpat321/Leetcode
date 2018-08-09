@@ -1,2 +1,2 @@
 # Leetcode
-Keep record of Leetcode practicing.
+Keep record of my personal Leetcode practicing.
