@@ -48,4 +48,5 @@ class Solution(object):
         return res
 """
 Search the tree using BFS, and then pop the last element in each level.
+Alternatively you can use DFS starting from the right element of the tree which is faster.
 """
