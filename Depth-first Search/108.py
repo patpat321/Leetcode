@@ -51,4 +51,19 @@ class Solution:
 """
 Balanced height BST can be built by binary search.
 Create two stackes for subset and nodes, then use DFS to traverse through subset and nodes at the same time to build the tree.
+
+Alternatively use recuision:
+class Solution:
+    def sortedArrayToBST(self, nums):
+        if len(nums)==0:
+            return None
+        if len(nums)==1:
+            root = TreeNode(nums[0])
+            return root
+        else:
+            mid = int(len(nums)//2)
+            root = TreeNode(nums[mid])
+            root.left = self.sortedArrayToBST(nums[0:mid])
+            root.right = self.sortedArrayToBST(nums[(mid+1):])
+            return root
 """
