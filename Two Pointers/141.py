@@ -25,5 +25,9 @@ class Solution(object):
             node = node.next
         return False
 """
-Classic trick to use dictionary to build the connection for linked list.
+Space:O(n) Solution, Classic trick to use dictionary to build the connection for linked list.
+Space:O(1) Solution, Use two pointers, walker and runner.
+walker moves step by step. runner moves two steps at time.
+if the Linked List has a cycle walker and runner will meet at some
+point.
 """
