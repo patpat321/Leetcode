@@ -31,4 +31,13 @@ class Solution:
         return num
 """
 O(n), run through the list and record the time that number appeared.
+Alternatively:
+class Solution:
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        nums.sort()
+        return nums[(int) (len(nums) / 2)]
 """
