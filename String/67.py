@@ -41,4 +41,6 @@ class Solution:
         return bin2str(str2bin(a) + str2bin(b))
 """
 Write the function to covert between string and binary.
+int("1100", 2)
+bin(12) = '0b1100'
 """
